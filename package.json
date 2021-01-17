@@ -1,0 +1,14 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "Just a repo related to exercises made",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leandro Alves",
+  "license": "ISC",
+  "devDependencies": {
+    "code-complexity": "^4.0.1"
+  }
+}
