@@ -48,7 +48,7 @@ function checkPermutation(s1, s2) {
         return
     }
 
-    const charMap = new Map();
+    const charMap = new Map()
     let previousCounter
 
     for (let i in s1) {
