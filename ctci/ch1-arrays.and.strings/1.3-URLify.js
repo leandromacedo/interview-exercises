@@ -16,7 +16,7 @@ function URLify(s) {
 function URLify(s, len) {
 
     let output = ""
-    let totalSpaces = str.length - len
+    let totalSpaces = s.length - len
     let frontSpaces = 0
 
     let flag = false
@@ -32,14 +32,14 @@ function URLify(s, len) {
         }
 
         if (flag && i < s.length - (totalSpaces - frontSpaces)) {
-            if (str[i] === " ") s += "%20"
-            else s += str[i]
+            if (s[i] === " ") output += "%20"
+            else output += s[i]
         }
 
     }
-
-
+    console.log(output)
+    return output
 }
 
 s = 'Mr John Smith    '
-URLify(s)
+URLify(s, 13)
