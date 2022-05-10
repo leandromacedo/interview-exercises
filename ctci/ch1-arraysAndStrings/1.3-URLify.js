@@ -1,18 +1,4 @@
-// Not sure about the complexity, since splice can vary from O(1) to O(n), thus giving total complexity of O(n^2) or O(n)
-function URLify(s) {
-    sArray = s.split('')
-    for (let j = sArray.length - 1; j > 0; j--) {
-        if (s[j] === ' ') {
-            // Maybe try without splice
-            sArray.splice(j, 1, '%20')
-        }
-    }
-
-    console.log(sArray.join(''));
-}
-
-// A different approach, counting the spaces
-
+// O(n) It identifies front and end spaces, replacing the rest
 function URLify(s, len) {
 
     let output = ""

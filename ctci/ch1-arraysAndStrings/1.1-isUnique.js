@@ -12,16 +12,16 @@ const a = "abcde"
 const b = "abcda"
 
 // The complexity here would be O(n²)
-function isUnique(s) {
+export function isUnique(s) {
     for (let i in s) {
         for (let j = 0; j < i; j++) {
             if (s[i] === s[j]) {
-                console.log(`${s} is not unique`)
+                // console.log(`${s} is not unique`)
                 return false
             }
         }
     }
-    console.log(`${s} is unique`)
+    // console.log(`${s} is unique`)
     return true
 }
 

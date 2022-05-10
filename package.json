@@ -4,11 +4,14 @@
   "description": "Just a repo related to exercises made",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ctci/**/*.spec.js"
   },
+  "type": "module",
   "author": "Leandro Alves",
   "license": "ISC",
   "devDependencies": {
-    "code-complexity": "^4.0.1"
+    "chai": "^4.3.4",
+    "code-complexity": "^4.0.1",
+    "mocha": "^9.1.2"
   }
 }
