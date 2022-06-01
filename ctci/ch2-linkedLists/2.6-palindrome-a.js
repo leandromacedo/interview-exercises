@@ -1,5 +1,7 @@
-import * as utils from './utils.js';
+import * as utils from './utils.js'
 
+// This approach is O(n) and iterativelycreates a string until halfway,
+// and after that starts to substract from it
 const palindrome = list => {
     const listLen = utils.getLength(list)
 
@@ -38,6 +40,8 @@ let tests = [
     'sasssas'.split(''),
     'sassqas'.split(''),
     'sasds'.split(''),
+    '12321'.split(''),
+    '123421'.split(''),
 ];
 
 console.log(tests.map(test => {
