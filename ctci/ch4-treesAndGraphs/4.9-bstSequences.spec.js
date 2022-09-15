@@ -17,6 +17,16 @@ describe('4.9: Sequences possibles from a BST', function () {
         expect(bstSequences(tree)).to.deep.include.members([[1,0,2]])
         expect(bstSequences(tree)).to.deep.include.members([[1,2,0]])
     })
+
+    it('Returns 3 results for 4 node tree', () => {
+        const tree = createMinimalTree([...Array(4).keys()])
+
+
+        expect(bstSequences(tree)).to.deep.include.members([[1, 0, 2, 3]])
+        expect(bstSequences(tree)).to.deep.include.members([[1, 2, 0, 3]])
+        expect(bstSequences(tree)).to.deep.include.members([[1, 2, 3, 0]])
+    })
+
     it('Returns 4 results for 5 node tree', () => {
         const tree = new TreeNode(4, [
             new TreeNode(2, [

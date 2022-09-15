@@ -99,7 +99,7 @@ class Queue {
     }
 
     isEmpty() {
-        return this.length
+        return !this.length
     }
 
 }

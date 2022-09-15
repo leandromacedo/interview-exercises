@@ -28,6 +28,7 @@ export default function allSequences(node) {
             weave(prefix, lSeq[i], rSeq, result)
         }
     }
+
     for (let i = 0; i < lSeq.length; i++) {
         for (let j = 0; j < rSeq.length; j++) {
             weave(prefix, lSeq[i], rSeq[j], result)
